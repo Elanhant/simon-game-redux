@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simon Redux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <%if(ENV !== 'development'){ %>
+    <link rel="stylesheet" type="text/css" href="/style-build.css">
+  <%}%>
+</head>
+<body>
+  <div id="app">
+    <%-content %>
+  </div>
+
+  <%if(ENV === 'development'){ %>
+    <script type="text/javascript" src="http://<%- ip %>:3002/assets/bundle.js"></script>
+  <%} else {%>
+    <script type="text/javascript" src="/client-build.js"></script>
+  <% } %>
+</body>
+</html>

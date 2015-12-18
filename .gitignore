@@ -1,0 +1,20 @@
+node_modules/
+npm-debug.log
+/client-build.js
+/server-build.js
+/style-build.css
+/*.svg
+/*.ttf
+/*.woff2
+/*.woff
+/*.eot
+
+# Don't add compiled
+*-compiled.js
+*-compiled.js.map
+
+# Jetbrains IDEs
+.idea/
+
+# OSX
+.DS_Store
